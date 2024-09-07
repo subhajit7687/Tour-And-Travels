@@ -17,11 +17,22 @@
     --SOCIAL-ICONS-SIZE: 30px;
 
     /* PADDINGS */
-    --HEADER-PADDING: 10px 150px;
+    --GLOBAL-PADDING-HORIZONTAL: 150px;
+    --HEADER-PADDING: 10px var(--GLOBAL-PADDING-HORIZONTAL);
+    --MAIN-PADDING-HORIZONTAL: var(--GLOBAL-PADDING-HORIZONTAL);
 }
 
 html {
     font-family: "Inter", sans-serif;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+.global-padding-horizontal {
+    background-image: url("../assets/images/banner_background_image.png");
 }
 
 /* HEADER */
@@ -69,4 +80,64 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+/* BANNER */
+
+.banner {
+    padding-inline: var(--MAIN-PADDING-HORIZONTAL);
+}
+
+/* HEADING */
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#brand-name {
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav ul li a:any-link {
+    color: white;
+}
+
+#register-button {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 33px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#register-button:hover {
+    background-color: #fff;
+    color: #000;
 }
