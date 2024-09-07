@@ -24,6 +24,8 @@ html {
     font-family: "Inter", sans-serif;
 }
 
+/* HEADER */
+
 header {
     background-color: var(--HEADER-BACKGROUND-COLOR);
     color: var(--HEADER-FONT-COLOR);
