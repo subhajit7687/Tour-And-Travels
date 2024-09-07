@@ -18,7 +18,7 @@
     --SOCIAL-ICONS-SIZE: 30px;
 
     /* PADDINGS */
-    --GLOBAL-PADDING-HORIZONTAL: 150px;
+    --GLOBAL-PADDING-HORIZONTAL: 10%;
     --HEADER-PADDING: 10px var(--GLOBAL-PADDING-HORIZONTAL);
 }
 
@@ -82,7 +82,7 @@ header {
     align-items: center;
 }
 
-/* HEADING */
+/* BANNER-HEADING */
 
 .heading {
     display: flex;
@@ -144,4 +144,25 @@ header {
     display: block;
     margin-top: 4px;
     background-color: var(--UNDERLINE-COLOR);
+}
+
+/* BANNER-DOTS */
+
+.banner-footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.dots {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.current-dot {
+    background-color: #19b200;
 }
