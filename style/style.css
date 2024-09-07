@@ -12,6 +12,7 @@
     /* COLORS */
     --HEADER-BACKGROUND-COLOR: #000;
     --HEADER-FONT-COLOR: #fff;
+    --UNDERLINE-COLOR: #24ff00;
 
     /* DIMENSIONS */
     --SOCIAL-ICONS-SIZE: 30px;
@@ -19,7 +20,6 @@
     /* PADDINGS */
     --GLOBAL-PADDING-HORIZONTAL: 150px;
     --HEADER-PADDING: 10px var(--GLOBAL-PADDING-HORIZONTAL);
-    --MAIN-PADDING-HORIZONTAL: var(--GLOBAL-PADDING-HORIZONTAL);
 }
 
 html {
@@ -82,12 +82,6 @@ header {
     align-items: center;
 }
 
-/* BANNER */
-
-.banner {
-    padding-inline: var(--MAIN-PADDING-HORIZONTAL);
-}
-
 /* HEADING */
 
 .heading {
@@ -95,7 +89,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-block: 20px;
+    padding: 20px var(--GLOBAL-PADDING-HORIZONTAL);
+    border-bottom: 1px solid #d0d0d0;
 }
 
 .logo {
@@ -140,4 +135,13 @@ header {
 #register-button:hover {
     background-color: #fff;
     color: #000;
+}
+
+.selection-underline::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin-top: 4px;
+    background-color: var(--UNDERLINE-COLOR);
 }
