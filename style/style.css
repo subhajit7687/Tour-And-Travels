@@ -278,7 +278,7 @@ header {
     gap: 5px;
 }
 
-.about-us__label p {
+.about-us__label h2 {
     font-size: 24px;
     font-weight: 700;
     color: var(--GREEN-THEME-COLOR);
