@@ -13,6 +13,7 @@
     --HEADER-BACKGROUND-COLOR: #000;
     --HEADER-FONT-COLOR: #fff;
     --GREEN-THEME-COLOR: #19b200;
+    --GREEN-THEME-COLOR-LIGHT: #24ff00;
 
     /* DIMENSIONS */
     --SOCIAL-ICONS-SIZE: 30px;
@@ -322,4 +323,60 @@ header {
 .about-us__gallery img:last-child {
     grid-row: 1/3;
     grid-column: 2/3;
+}
+
+/* SERVICES */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 72px var(--GLOBAL-PADDING-HORIZONTAL);
+}
+
+/* HEADING */
+
+.services-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.services-heading-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.services-heading-title h2 {
+    font-size: 24px;
+    color: var(--GREEN-THEME-COLOR);
+}
+
+.services-title-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.services-title-lines:first-child {
+    align-items: flex-end;
+}
+
+.services-title-lines div {
+    height: 1px;
+    background-color: var(--GREEN-THEME-COLOR-LIGHT);
+}
+
+.services-title-lines div:first-child {
+    width: 32px;
+}
+
+.services-title-lines div:last-child {
+    width: 60px;
+}
+
+.services-heading p {
+    font-size: 32px;
+    font-weight: 700;
 }
