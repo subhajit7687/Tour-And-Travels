@@ -414,4 +414,5 @@ header {
     background-color: var(--GREEN-THEME-COLOR);
     color: white;
     padding: 8px 16px;
+    cursor: pointer;
 }
