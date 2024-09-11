@@ -90,3 +90,47 @@ header {
     flex-direction: row;
     align-items: center;
 }
+
+/* SECTION */
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--GREEN-THEME-COLOR);
+}
+
+.section-label {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* TITLE */
+
+.title-with-lines {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.title-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title-lines:first-child {
+    align-items: flex-end;
+}
+
+.title-lines div {
+    height: 2px;
+    background-color: var(--GREEN-THEME-COLOR-LIGHT);
+}
+
+.title-lines div:first-child {
+    width: 32px;
+}
+
+.title-lines div:last-child {
+    width: 60px;
+}
