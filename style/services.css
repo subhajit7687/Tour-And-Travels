@@ -6,15 +6,6 @@
     gap: 40px;
 }
 
-/* HEADING */
-
-.services-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
-
 /* BODY */
 
 .services-body {

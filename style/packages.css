@@ -1,0 +1,6 @@
+.travel-packages {
+    padding: 44px var(--GLOBAL-PADDING-HORIZONTAL);
+    background-image: url("../assets/images/travel_packages_background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
