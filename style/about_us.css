@@ -51,12 +51,6 @@
     font-weight: 700;
     border: none;
     padding: 12px 28px;
-    transition: transform var(--HOVER-ANIMATION-DURATION);
-}
-
-#read-more-button:hover {
-    cursor: pointer;
-    transform: scale(1.1);
 }
 
 /* ABOUT US GALLERY */

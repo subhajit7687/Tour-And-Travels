@@ -91,6 +91,17 @@ header {
     align-items: center;
 }
 
+/* BUTTON */
+
+.animated-button {
+    cursor: pointer;
+    transition: transform var(--HOVER-ANIMATION-DURATION);
+}
+
+.animated-button:hover {
+    transform: scale(1.1);
+}
+
 /* SECTION */
 
 .section-heading {

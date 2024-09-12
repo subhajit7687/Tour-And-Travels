@@ -28,7 +28,7 @@ servicesList.forEach((service) => {
                         />
                         <h3>${service.title}</h3>
                         <p>${service.content}</p>
-                        <button type="submit">click here</button>`;
+                        <button type="submit" class="animated-button">click here</button>`;
 
     servicesBody.appendChild(section);
 });
@@ -121,10 +121,10 @@ packagesList.forEach((package) => {
 
                             <!-- CARD BUTTONS -->
                             <section class="packages-card-buttons-section">
-                                <button class="packages-card-buttons">
+                                <button class="packages-card-buttons animated-button">
                                     Book Now
                                 </button>
-                                <button class="packages-card-buttons">
+                                <button class="packages-card-buttons animated-button">
                                     View Details
                                 </button>
                             </section>

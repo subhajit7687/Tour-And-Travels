@@ -102,5 +102,6 @@
     color: #fff;
     font-weight: 700;
     font-size: 14px;
-    padding: 8px;
+    padding: 8px 0px;
+    width: 8rem;
 }
