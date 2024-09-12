@@ -30,6 +30,7 @@
     flex: 1;
     box-shadow: 8px 8px 20px rgb(203, 203, 203),
         -8px 8px 20px rgb(203, 203, 203);
+    background-color: #fff;
 }
 
 .packages-card > img {
@@ -58,13 +59,10 @@
     display: flex;
     flex-direction: column;
     gap: 17px;
+    padding: 10px 36px;
 }
 
 /* TITLE AND RATING */
-
-.packages-card-body {
-    padding: 24px 36px;
-}
 
 .packages-title {
     font-size: 22px;
@@ -92,6 +90,7 @@
 
 .packages-card-buttons-section {
     margin-top: 17px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
 }
