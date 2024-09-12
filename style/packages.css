@@ -23,13 +23,15 @@
     gap: 20px;
 }
 
+/* CARD */
+
 .packages-card {
     flex: 1;
     box-shadow: 8px 8px 20px rgb(203, 203, 203),
         -8px 8px 20px rgb(203, 203, 203);
 }
 
-.packages-card img {
+.packages-card > img {
     display: block;
 }
 
@@ -45,4 +47,27 @@
     padding-block: 11px;
     justify-content: center;
     border: 1px solid #e3e3e3;
+}
+
+/* TITLE AND RATING */
+
+.packages-card-body {
+    padding: 24px 36px;
+}
+
+.packages-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--GREEN-THEME-COLOR);
+}
+
+.packages-title-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.packages-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
