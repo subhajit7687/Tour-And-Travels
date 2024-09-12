@@ -17,3 +17,32 @@
     font-weight: 700;
     padding: 12px 22px;
 }
+
+.travel-packages-body {
+    display: flex;
+    gap: 20px;
+}
+
+.packages-card {
+    flex: 1;
+    box-shadow: 8px 8px 20px rgb(203, 203, 203),
+        -8px 8px 20px rgb(203, 203, 203);
+}
+
+.packages-card img {
+    display: block;
+}
+
+.packages-info {
+    display: flex;
+}
+
+.packages-info-content {
+    flex: 1;
+    display: flex;
+    color: var(--GREEN-THEME-COLOR);
+    gap: 4px;
+    padding-block: 11px;
+    justify-content: center;
+    border: 1px solid #e3e3e3;
+}
