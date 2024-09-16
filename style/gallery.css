@@ -1,0 +1,47 @@
+#travel-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    align-items: center;
+    padding: 60px var(--GLOBAL-PADDING-HORIZONTAL);
+}
+
+.gallery-body {
+    display: grid;
+    gap: 20px;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "l1 m r1"
+        "l1 m r1"
+        "l2 m r1"
+        "l2 m r2"
+        "l3 m r2"
+        "l3 m r2";
+}
+
+.gallery-body img:first-child {
+    grid-area: l1;
+}
+
+.gallery-body img:nth-child(2) {
+    grid-area: l2;
+}
+
+.gallery-body img:nth-child(3) {
+    grid-area: l3;
+}
+
+.gallery-body img:nth-child(4) {
+    grid-area: m;
+}
+
+.gallery-body img:nth-child(5) {
+    grid-area: r1;
+}
+
+.gallery-body img:last-child {
+    grid-area: r2;
+}
