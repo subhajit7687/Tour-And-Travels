@@ -1,25 +1,11 @@
-// Services
-class ServicesCardItem {
-    constructor(image, title) {
-        this.image = image;
-        this.title = title;
-        this.content =
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.";
-    }
-}
-
-const servicesList = [
-    new ServicesCardItem("./assets/icons/services_1.png", "Hotel Reservation"),
-    new ServicesCardItem("./assets/icons/services_2.png", "Flight Booking"),
-    new ServicesCardItem("./assets/icons/services_3.png", "Train Booking"),
-    new ServicesCardItem("./assets/icons/services_4.png", "Travel Guide"),
-];
+import * as data from "./data.js";
 
 // Element
 const servicesBody = document.querySelector(".services-body");
+const packagesBodyElement = document.querySelector(".travel-packages-body");
 
 // Add services into html
-servicesList.forEach((service) => {
+data.servicesList.forEach((service) => {
     const section = document.createElement("section");
     section.classList.add("services-card");
     section.innerHTML = `<img
@@ -33,91 +19,41 @@ servicesList.forEach((service) => {
     servicesBody.appendChild(section);
 });
 
-// Travel Packages
-class TravelPackages {
-    constructor(
-        img,
-        price,
-        days,
-        person,
-        title,
-        rating,
-        details = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa"
-    ) {
-        this.img = img;
-        this.price = price;
-        this.days = days;
-        this.person = person;
-        this.title = title;
-        this.rating = rating;
-        this.details = details;
-    }
-}
-
-const packagesList = [
-    new TravelPackages(
-        "./assets/images/packages_img1.png",
-        250,
-        4,
-        2,
-        "Bali",
-        5
-    ),
-    new TravelPackages(
-        "./assets/images/packages_img2.png",
-        180,
-        5,
-        2,
-        "Thailand",
-        5
-    ),
-    new TravelPackages(
-        "./assets/images/packages_img3.png",
-        350,
-        6,
-        2,
-        "Paris",
-        5
-    ),
-];
-
-const packagesBodyElement = document.querySelector(".travel-packages-body");
-
-packagesList.forEach((package) => {
+data.packagesList.forEach((pack) => {
     const card = document.createElement("section");
     card.classList.add("packages-card");
 
     let ratingHTML = "";
 
-    for (let i = 1; i <= package.rating; i++) {
+    for (let i = 1; i <= pack.rating; i++) {
         ratingHTML += `<img src="./assets/icons/rating_star.png" />`;
     }
 
-    card.innerHTML = `<img src="${package.img}" alt="" />
+    card.innerHTML = `<img src="${pack.img}" alt="" />
                         <!-- CARD INFO -->
                         <section class="packages-info">
                             <div class="packages-info-content">
                                 <img src="./assets/icons/dollar.png" alt="" />
-                                <p>${package.price}$</p>
+                                <p>${pack.price}$</p>
                             </div>
                             <div class="packages-info-content">
                                 <img src="./assets/icons/calendar.png" alt="" />
-                                <p>${package.days}days</p>
+                                <p>${pack.days}days</p>
                             </div>
                             <div class="packages-info-content">
                                 <img src="./assets/icons/person.png" alt="" />
-                                <p>${package.person}person</p>
+                                <p>${pack.person}person</p>
                             </div>
                         </section>
 
                         <!-- CARD BODY -->
                         <section class="packages-card-body">
                             <section class="packages-title-rating">
-                                <h3 class="packages-title">${package.title}</h3>
+                                <h3 class="packages-title">${pack.title}</h3>
                                 <section class="packages-rating">${ratingHTML}</section>
                             </section>
 
-                            <p>${package.details}</p>
+                            <p>${pack.details}</p>
 
                             <!-- CARD BUTTONS -->
                             <section class="packages-card-buttons-section">
